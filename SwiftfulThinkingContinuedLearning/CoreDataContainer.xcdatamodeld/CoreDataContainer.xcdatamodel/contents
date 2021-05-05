@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D64" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BusinessEntity" representedClassName="BusinessEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="departments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DepartmentEntity" inverseName="businesses" inverseEntity="DepartmentEntity"/>
+        <relationship name="employees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmployeeEntity" inverseName="business" inverseEntity="EmployeeEntity"/>
+    </entity>
+    <entity name="DepartmentEntity" representedClassName="DepartmentEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="businesses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BusinessEntity" inverseName="departments" inverseEntity="BusinessEntity"/>
+        <relationship name="employees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmployeeEntity" inverseName="department" inverseEntity="EmployeeEntity"/>
+    </entity>
+    <entity name="EmployeeEntity" representedClassName="EmployeeEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dateJoined" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="business" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BusinessEntity" inverseName="employees" inverseEntity="BusinessEntity"/>
+        <relationship name="department" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DepartmentEntity" inverseName="employees" inverseEntity="DepartmentEntity"/>
+    </entity>
+    <elements>
+        <element name="BusinessEntity" positionX="-183.65380859375" positionY="-142.3265991210938" width="128" height="88"/>
+        <element name="DepartmentEntity" positionX="36" positionY="90" width="128" height="74"/>
+        <element name="EmployeeEntity" positionX="-378.2423095703125" positionY="72.15704345703125" width="128" height="104"/>
+    </elements>
+</model>
