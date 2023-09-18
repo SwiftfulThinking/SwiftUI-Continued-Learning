@@ -116,7 +116,7 @@ class CoreDataRelationshipViewModel: ObservableObject {
         
         // add existing departments to the new business
         //newBusiness.departments = [departments[0], departments[1]]
-        
+        newBusiness.departments = [departments[0]]
         // add existing employees to the new business
         //newBusiness.employees = [employees[1]]
         

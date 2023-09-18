@@ -22,8 +22,11 @@ struct MagnificationGestureBootcamp: View {
                 Image(systemName: "ellipsis")
             }
             .padding(.horizontal)
-            Rectangle()
+            Image("steve-jobs")
+                .resizable()
+                .scaledToFill()
                 .frame(height: 300)
+                .clipped()
                 .scaleEffect(1 + currentAmount)
                 .gesture(
                     MagnificationGesture()
