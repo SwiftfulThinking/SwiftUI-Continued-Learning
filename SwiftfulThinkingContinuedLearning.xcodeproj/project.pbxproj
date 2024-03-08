@@ -48,6 +48,8 @@
 		0279E6D3263A57FA00094483 /* ImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279E6D2263A57FA00094483 /* ImageLoadingViewModel.swift */; };
 		0279E6D9263A608400094483 /* PhotoModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279E6D8263A608400094483 /* PhotoModelCacheManager.swift */; };
 		0279E6DC263A619500094483 /* PhotoModelFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279E6DB263A619500094483 /* PhotoModelFileManager.swift */; };
+		028E664B2B66EA8200580761 /* VisualEffectBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E664A2B66EA8200580761 /* VisualEffectBootcamp.swift */; };
+		028E664D2B66F00F00580761 /* ScrollViewPagingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E664C2B66F00F00580761 /* ScrollViewPagingBootcamp.swift */; };
 		02931A6E2A427E9F001BE6A5 /* AccessibilityTextBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02931A6D2A427E9F001BE6A5 /* AccessibilityTextBootcamp.swift */; };
 		02931A702A42869D001BE6A5 /* AccessibilityColorsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02931A6F2A42869D001BE6A5 /* AccessibilityColorsBootcamp.swift */; };
 		02931A722A4290F7001BE6A5 /* AccessibilityVoiceOverBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02931A712A4290F7001BE6A5 /* AccessibilityVoiceOverBootcamp.swift */; };
@@ -100,6 +102,8 @@
 		0279E6D2263A57FA00094483 /* ImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingViewModel.swift; sourceTree = "<group>"; };
 		0279E6D8263A608400094483 /* PhotoModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelCacheManager.swift; sourceTree = "<group>"; };
 		0279E6DB263A619500094483 /* PhotoModelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelFileManager.swift; sourceTree = "<group>"; };
+		028E664A2B66EA8200580761 /* VisualEffectBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBootcamp.swift; sourceTree = "<group>"; };
+		028E664C2B66F00F00580761 /* ScrollViewPagingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPagingBootcamp.swift; sourceTree = "<group>"; };
 		02931A6D2A427E9F001BE6A5 /* AccessibilityTextBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityTextBootcamp.swift; sourceTree = "<group>"; };
 		02931A6F2A42869D001BE6A5 /* AccessibilityColorsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityColorsBootcamp.swift; sourceTree = "<group>"; };
 		02931A712A4290F7001BE6A5 /* AccessibilityVoiceOverBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityVoiceOverBootcamp.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				02931A6F2A42869D001BE6A5 /* AccessibilityColorsBootcamp.swift */,
 				02931A712A4290F7001BE6A5 /* AccessibilityVoiceOverBootcamp.swift */,
 				0264C5D02AB8EDAE0033070B /* AlignmentGuideBootcamp.swift */,
+				028E664A2B66EA8200580761 /* VisualEffectBootcamp.swift */,
+				028E664C2B66F00F00580761 /* ScrollViewPagingBootcamp.swift */,
 				0263016C2607AAA500E216EB /* Assets.xcassets */,
 				026301712607AAA500E216EB /* Info.plist */,
 				0263016E2607AAA500E216EB /* Preview Content */,
@@ -321,6 +327,7 @@
 				02931A702A42869D001BE6A5 /* AccessibilityColorsBootcamp.swift in Sources */,
 				023DAC27261C2B8600AEE98D /* FruitsContainer.xcdatamodeld in Sources */,
 				023DACA426225BFC00AEE98D /* DownloadWithCombine.swift in Sources */,
+				028E664D2B66F00F00580761 /* ScrollViewPagingBootcamp.swift in Sources */,
 				023DABEF2617FFC900AEE98D /* HashableBootcamp.swift in Sources */,
 				0279E6DC263A619500094483 /* PhotoModelFileManager.swift in Sources */,
 				0279E6982637D4C700094483 /* CacheBootcamp.swift in Sources */,
@@ -336,6 +343,7 @@
 				026301832607BCD800E216EB /* DragGestureBootcamp.swift in Sources */,
 				029FB290262BB2AE0062D169 /* SubscriberBootcamp.swift in Sources */,
 				023DAC85261EAED200AEE98D /* CoreDataContainer.xcdatamodeld in Sources */,
+				028E664B2B66EA8200580761 /* VisualEffectBootcamp.swift in Sources */,
 				023DABF2261819C600AEE98D /* ArraysBootcamp.swift in Sources */,
 				02931A722A4290F7001BE6A5 /* AccessibilityVoiceOverBootcamp.swift in Sources */,
 				023DABEC2617F35D00AEE98D /* LocalNotificationBootcamp.swift in Sources */,
@@ -492,7 +500,7 @@
 				DEVELOPMENT_TEAM = 9JN8RSJMX3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftfulThinkingContinuedLearning/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,7 +522,7 @@
 				DEVELOPMENT_TEAM = 9JN8RSJMX3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftfulThinkingContinuedLearning/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
