@@ -11,7 +11,7 @@ import SwiftUI
 
 struct AccessibilityTextBootcamp: View {
     
-    @Environment(\.sizeCategory) var sizeCategory
+    @Environment(\.dynamicTypeSize) var dynamicTypeSize
     
     var body: some View {
         NavigationStack {
@@ -31,7 +31,7 @@ struct AccessibilityTextBootcamp: View {
                             .font(.subheadline)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .lineLimit(3)
-                            .minimumScaleFactor(sizeCategory.customMinScaleFactor)
+                            .minimumScaleFactor(dynamicTypeSize.customMinScaleFactor)
                     }
 //                    .frame(height: 100)
                     .background(Color.red)
@@ -43,19 +43,17 @@ struct AccessibilityTextBootcamp: View {
     }
 }
 
-extension ContentSizeCategory {
-    
+extension DynamicTypeSize {
     var customMinScaleFactor: CGFloat {
         switch self {
-        case .extraSmall, .small, .medium:
+        case .xSmall, .small, .medium:
             return 1.0
-        case .large, .extraLarge, .extraExtraLarge:
+        case .large, .xLarge, .xxLarge:
             return 0.8
         default:
             return 0.85
         }
     }
-    
 }
 
 
